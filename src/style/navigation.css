@@ -20,6 +20,7 @@
 
 .ul-flex {
     display: none;
+    height: auto;
 }
 
 .li-container {
@@ -29,6 +30,7 @@
     list-style: none;
     font-weight: 250;
     padding-top: 1rem;
+    height: auto;
    
 }
 
