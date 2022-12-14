@@ -1,0 +1,66 @@
+/* ---------- grid container styling ---------- */
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+
+  .grid-container > article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #0F1415;
+    height: 430px;
+  }
+  
+  .grid-container > article h2 {
+    font-size: 16px;
+    font-weight: 200;
+    font-family: 'Poppins';
+    margin: auto 10px 120px 10px;
+  }
+  
+  .grid-container > article h6 {
+    font-size: 0.9em;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .grid-container > article ::first-letter {
+    text-transform: uppercase;
+  }
+  
+  .grid-container > article img {
+    margin-top: 50px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .slider {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+    height: 600px;
+  }
+
+  .news-header {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-top: 100px;
+  }
+ 
+  .news-text {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 200;
+    margin-top: 50px;
+    padding: 0 2rem 0 2rem;
+    line-height: 3;
+    margin: 3rem auto;
+  }

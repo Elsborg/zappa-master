@@ -34,7 +34,6 @@ a { color: inherit;
   overflow: hidden;
 }
 
-
 @media screen and (max-width: 600px) {
   .react-pdf__Page__canvas {
     max-width: 350px;
