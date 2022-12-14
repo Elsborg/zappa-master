@@ -13,7 +13,7 @@ a { color: inherit;
 .wrapper {
   display: grid;
   grid-template-columns: 400px auto;
-  grid-template-rows: auto;
+  grid-template-rows: 100% 100%;
 }
 
 .page-wrapper {
