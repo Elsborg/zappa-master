@@ -20,8 +20,6 @@
 
 .ul-flex {
     display: none;
-    padding-top: 2.5rem;
-    height: 100%;
 }
 
 .li-container {
@@ -30,7 +28,8 @@
     font-size: 14px;
     list-style: none;
     font-weight: 250;
-    height: 100%;
+    padding-top: 1rem;
+   
 }
 
 .li-container:hover {
@@ -92,7 +91,7 @@
     }
 
     .li-container {
-        margin-top: 3.5rem;
+        margin-top: 2.5rem;
     }
 
     .burger {
@@ -102,7 +101,7 @@
     .social-icons {
         display: flex;
         flex-direction: row;
-        padding: 6rem;
+        padding: 4rem 6rem 0 6rem;
     }
 
   }
