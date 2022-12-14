@@ -3,14 +3,6 @@
     display: grid;
     grid-template-rows: 1fr;
   }
-  
-  @media (max-width: 600px) {
-    .grid-container{
-      slidesToShow: 3;
-    }
-          
-  }
-
 
   .grid-container > article {
     display: flex;
@@ -55,7 +47,7 @@
     height: 600px;
   }
 
-  h1 {
+  .news-header {
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -63,9 +55,12 @@
     margin-top: 100px;
   }
  
-  p {
+  .news-text {
     font-size: 12px;
     text-align: center;
     font-weight: 200;
     margin-top: 50px;
+    padding: 0 2rem 0 2rem;
+    line-height: 3;
+    margin: 3rem auto;
   }

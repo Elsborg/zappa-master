@@ -25,9 +25,9 @@ const News = () => {
           <div style={insideStyles}>nyheder</div>
         </div>
       </Parallax>
-      <h1>nyheder i café zappa</h1>
-      <p>Følg med i de seneste udviklinger her i caféen. Alt fra tilbud, nye retter på menuen til events og fede koncepts.
-        <br></br><br></br>Følg os på Facebook og Instagram for mere info om os!</p>
+      <h3 className='news-header'>nyheder i café zappa</h3>
+      <p className='news-text'>Følg med i de seneste udviklinger her i caféen. Alt fra tilbud, nye retter på menuen til events og fede koncepts.
+        <br></br>Følg os på Facebook og Instagram for mere info om os!</p>
 
       <div className='slider'>
         <SimpleSlider options={{
@@ -35,6 +35,17 @@ const News = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: false,
+          responsive: [
+            {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              swipe: true,
+            },
+          },
+        ],
         }} />
 
       </div>
