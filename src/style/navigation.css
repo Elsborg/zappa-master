@@ -20,7 +20,6 @@
 
 .ul-flex {
     display: none;
-    overflow: auto;
 }
 
 .li-container {
@@ -29,8 +28,7 @@
     font-size: 14px;
     list-style: none;
     font-weight: 250;
-    padding-top: 1rem;
-    height: auto;
+    padding-top: 20px;
    
 }
 
@@ -90,6 +88,7 @@
       flex-direction: column;
       width: 100%;
       text-align: center;
+      max-height: 100%;
     }
 
     .li-container {
