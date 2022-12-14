@@ -20,7 +20,7 @@
 
 .ul-flex {
     display: none;
-    height: auto;
+    overflow: auto;
 }
 
 .li-container {
