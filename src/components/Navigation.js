@@ -62,6 +62,7 @@ const Navigation = () => {
         <div className='logo'>
             <img className='logo-nav' src={zappa} alt="zappa logo" />
         </div>
+        <div className='nav-flex'>
         <ul className='ul-flex'>
 
             {links.map(({id, link}) => (
@@ -71,6 +72,7 @@ const Navigation = () => {
                 </li>
             ))}            
         </ul>
+        </div>
         <div className='social-icons'>
            <a href='https://www.facebook.com/cafezappa.dk/' target='_blank' rel='noreferrer'> 
         <FiFacebook size={25} style={{marginRight : 20}} />
