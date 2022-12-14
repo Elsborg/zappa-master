@@ -1,5 +1,4 @@
 import parse from "html-react-parser";
-import "../style/news.css";
 
 export default function SlideItem({ post }) {
     let image = "https://cederdorff.github.io/img/logo512.webp";
