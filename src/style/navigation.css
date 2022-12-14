@@ -21,6 +21,7 @@
 .ul-flex {
     display: none;
     padding-top: 2.5rem;
+    height: 100%;
 }
 
 .li-container {
@@ -29,6 +30,7 @@
     font-size: 14px;
     list-style: none;
     font-weight: 250;
+    height: 100%;
 }
 
 .li-container:hover {
