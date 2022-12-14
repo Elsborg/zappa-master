@@ -1,0 +1,60 @@
+.menu-image {
+    width: 250px;
+    margin-top: 4rem;
+    cursor: pointer;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.menu-image:hover {
+    -webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+    cursor: pointer;
+  }
+
+
+.menu-heading {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.menu-paragraph {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 2;
+    margin-top: 2rem;
+}
+
+.menuImg-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.menuImg-heading {
+font-size: 16px;
+font-weight: 800;
+text-transform: uppercase;
+}
+
+.menuImg-para {
+font-size: 12px;
+}
+
+.menuImg-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Montserrat:wght@300;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #12181A;
+  color: white;
+}
+
+
+a { color: inherit; 
+ }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 400px auto;
+}
+
+.page-wrapper {
+  grid-column: 2;
+}
+
+
+/*Styling for Pdf modal and pdf buttons*/
+
+.react-pdf__Page__canvas {
+  margin: 0 auto;
+  max-width: 800px;
+  max-height: 1000px;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 600px) {
+  .react-pdf__Page__canvas {
+    max-width: 350px;
+    max-height: 500px;
+  }
+}
+
+
+.pdf-buttons {
+  display: flex;
+}
+
+.pdfbuttons-container {
+  background-color: #12181A;
+  padding: 0.225rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.percentage-input {
+  width: 3rem;
+  text-align: center;
+}
+
+.pdf-close {
+  display: inline;
+}
+
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .page-wrapper {
+    grid-column: auto;
+  }
+
+  .parCover {
+    width: 100%;
+    min-height: 100%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .parallax-effect {
+    height: 250px;
+  }
+
+}
+
+

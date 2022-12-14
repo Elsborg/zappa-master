@@ -1,0 +1,144 @@
+.landing-wrapper {
+    display: flex;
+    background-color: #12181A;
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-logo {
+    width: 200px;
+    padding-bottom: 50px;
+}
+
+.landing-image {
+    width: 700px;
+    cursor: pointer;
+    transition: transform .2s
+}
+
+.landing-image:hover {
+    transform: scale(1.05);
+}
+
+.landing-imageMobile {
+    display: none;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 4rem;
+    
+}
+
+.limage-container {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+    cursor: pointer;
+  }
+
+.content-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-heading {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.content-text {
+    font-size: 12px;
+    font-weight: 300;
+    width: 32%;
+    line-height: 2;
+}
+
+.hr-style {
+    color: white;
+    width: 40%;
+    margin: 20px 0 20px 0;
+}
+
+.image-text {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+    .landing-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .flex-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing-logo {
+        width: 150px;
+    }
+
+    .content-text {
+        width: 65%;
+        text-align: center;
+    }
+
+    .landing-image {
+        display: none;
+    }
+
+    .landing-imageMobile {
+        display: block;
+        width: 225px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .image-text {
+        text-align: center;
+    }
+
+    .hr-style {
+        width: 70%;
+    }
+
+
+    h3 {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .bottom-left {
+        bottom: 1.5rem;
+        left: 1rem;
+      }
+  }
