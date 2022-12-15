@@ -48,6 +48,7 @@ const BookingForm = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail}>
+        <legend style={{fontSize: '16px', fontWeight: '300', textTransform: 'uppercase'}}>Bord bestilling</legend>
       <label>
         Navn:
         <input

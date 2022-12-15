@@ -67,7 +67,7 @@ const PdfModal = ({ isOpen, onRequestClose, pdfSrc }) => {
         <div className='pdfbuttons-container'>
         <div className='pdf-buttons'>
         <AiOutlineZoomIn onClick={handleZoomIn} size={30} style={{color: 'white', cursor: 'pointer'}} />
-        <input className='percentage-input' type="text" value={`${(scale * 100).toFixed(0)}%`} readOnly/>
+        <input className='percentage-input' style={{width: '4rem'}} type="text" value={`${(scale * 100).toFixed(0)}%`} readOnly/>
         <AiOutlineZoomOut onClick={handleZoomOut} size={30} style={{color: 'white', cursor: 'pointer'}} />
         </div>
         <AiOutlineCloseCircle onClick={onRequestClose} size={30} style={{color: 'white', cursor: 'pointer'}} />
