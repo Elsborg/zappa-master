@@ -1,6 +1,8 @@
 import React from 'react';
 import { Parallax } from "react-parallax";
 import bord from "../assets/bordbooking.jpg";
+import BookingForm from './BokkingForm';
+
 
 
 
@@ -27,7 +29,11 @@ const Booking = () => {
         <div style={insideStyles}>Book Bord</div>
       </div>
     </Parallax>
-        <h2>Lorem Ipsum</h2>
+        <p style={{textAlign: 'center', marginTop: '2rem', fontWeight: '200', fontSize: '14px'}}>Her kan du bestille et bord hos Café Zappa, du udfylder blot formen og bordet er bestilt.</p>
+
+        <div>
+         <BookingForm />
+        </div>
 
 
     </div>
