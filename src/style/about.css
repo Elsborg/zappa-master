@@ -3,7 +3,7 @@
     line-height: 30px;
     font-weight: 200;
     text-align: center;
-    margin: 70px 170px 20px 170px;
+    margin: 70px 60px 20px 60px;
 }
 
 .about-header {
@@ -12,4 +12,13 @@
     text-transform: uppercase;
     font-weight: 200;
     margin-top: 80px;
+}
+
+/*Media queries*/
+@media screen and (min-width: 600px) {
+
+.about-text {
+    margin: 70px 170px 20px 170px;
+}
+
 }
