@@ -26,7 +26,6 @@ const Gallery = () => {
         <div style={insideStyles}>galleri</div>
       </div>
     </Parallax>
-        <h2>Lorem Ipsum</h2>
       
         <div><PhotoGallery /></div>
 
