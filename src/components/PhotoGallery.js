@@ -39,7 +39,7 @@ const PhotoGallery = () => {
 
   return (
     <>
-    <div style={{padding: '10px'}}>
+    <div style={{transition: 'transform .3s', padding: '10px' }}>
     <ResponsiveMasonry
     columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
 >
@@ -48,8 +48,9 @@ const PhotoGallery = () => {
             <img
                 key={i}
                 src={image}
-                style={{width: "100%", display: "block"}}
+                style={{width: "100%", display: "block", transition: 'transform .2s'}}
                 alt="Galleri billeder"
+                className='gallery-image'
             />
         ))}
     </Masonry>

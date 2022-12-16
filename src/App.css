@@ -34,6 +34,13 @@ a { color: inherit;
   overflow: hidden;
 }
 
+
+.gallery-image:hover {
+transform: scale(1.025);
+}
+
+
+
 @media screen and (max-width: 600px) {
   .react-pdf__Page__canvas {
     max-width: 350px;
