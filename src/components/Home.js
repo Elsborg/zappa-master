@@ -1,6 +1,6 @@
 import React from 'react'
 import '../style/home.css'
-import heroVideo from '../assets/zappavideo.mp4'
+import heroVideo from '../assets/zappavideo3.mp4'
 
 const Home = () => {
   return (
