@@ -6,12 +6,15 @@ import zappa from '../assets/zappalogo.png'
 import '../style/navigation.css'
 
 
-
+// This component represents a responsive navigation bar for the website. It uses the 'react-icons' and 'react-scroll' libraries
+// for the icon and smooth scrolling functionality, respectively. It also imports an image file for the logo and a CSS file for styling.
 
 const Navigation = () => {
 
+    // Declare a state variable for the mobile navigation menu
     const [nav, setNav] = useState(false);
 
+    // Declare an array of objects representing the links in the navigation bar
     const links = [
         {
             id: 1,
@@ -40,6 +43,8 @@ const Navigation = () => {
     ]
     
 
+  // The component is rendered, with a burger icon for opening the mobile navigation menu, a logo image, a navigation bar with
+  // links, and social media icons. The mobile navigation menu is hidden by default and can be toggled by clicking the burger icon.
   return (
     <div className='nav-container'>
         <div onClick={() => setNav(!nav)} className='burger'>

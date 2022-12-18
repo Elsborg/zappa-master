@@ -4,6 +4,14 @@ import { AiOutlineCloseCircle, AiOutlineZoomIn, AiOutlineZoomOut } from 'react-i
 import { Document, Page,  pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
+/* PdfModal component is a modal that allows a user to view a PDF file
+and navigate through it by clicking on the "Previous" and "Next" buttons.
+The modal also includes buttons for zooming in and out of the PDF and a close button
+to close the modal. The PdfModal component receives props isOpen, onRequestClose, and pdfSrc, which
+control whether the modal is open, a function to close the modal, and the source of the PDF file to be 
+displayed in the modal, respectively. The component also maintains state for the current scale of the PDF, the total number of pages
+in the PDF, and the current page number being displayed. It uses the Document and Page components from the react-pdf library
+to display the PDF.*/
 
 const customStyles = {
     content: {

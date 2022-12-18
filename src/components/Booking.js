@@ -3,11 +3,11 @@ import { Parallax } from "react-parallax";
 import bord from "../assets/bordbooking.jpg";
 import BookingForm from './BokkingForm';
 
+//This is the booking page "Book Bord". It renders a parallax with a header and the booking form imported from Bookingform.js
 
 
 
-
-
+//Styles for the parallax is defined here
 const insideStyles = {
   color: "white",
   padding: 20,

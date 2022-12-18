@@ -3,6 +3,8 @@ import { Parallax } from "react-parallax";
 import omos from "../assets/about.jpg";
 import "../style/about.css";
 
+//The about page with a parallax at the top of this page and text about Café Zappa is rendered here.
+
 const insideStyles = {
   color: "white",
   padding: 20,

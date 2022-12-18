@@ -4,7 +4,9 @@ import kunst from "../assets/kunst.jpg";
 import PhotoGallery from './PhotoGallery';
 
 
-
+//This is the gallery page which contains pictures of Café Zappa and their food.
+//A photogalley component is imported which displays the images in a grid like format and is responsive.
+//A parallax is rendered at the top with react-parallax package.
 
 const insideStyles = {
     color: "white",

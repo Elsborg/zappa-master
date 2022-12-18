@@ -8,6 +8,9 @@ import { Link } from 'react-router-dom'
 
 import '../style/landingPage.css'
 
+//This is the landing page component that is the first page you are visiting for choosing either the Café concept or the Cocktail concept.
+//Here is react-router-dom used for redirrecting the user to the content that they are clicking on.
+
 const LandingPage = () => {
   return (
     <div className='landing-wrapper'>

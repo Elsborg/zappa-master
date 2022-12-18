@@ -1,6 +1,8 @@
 import '../style/footer.css'
 
-
+//This is the footer component that is displayed at the bottom of the page.
+//Flexbox is used for creating three equal columns with info about the Café.
+//Styles is imported at the top 
 
 const Footer = () => {
     return (

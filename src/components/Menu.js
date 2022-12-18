@@ -12,9 +12,9 @@ import tapas from '../assets/tapas.jpg'
 import burger from '../assets/burger.jpg'
 import drinks from '../assets/drinks.png'
 
-
-
-
+// This component represents a page for displaying the restaurant's menu. It imports the necessary dependencies, including
+// the 'react-parallax' library for creating a parallax scrolling effect, and the 'menu.css' file for styling. It also 
+// imports image files and PDF files for the different menus.
 
 const insideStyles = {
   color: "white",
@@ -28,13 +28,17 @@ const insideStyles = {
   transform: "translate(-50%,-50%)"
 };
 
+// This object contains styles for the text that appears over the parallax image at the top of the page.
+
 
 
 const Menu = () => {
+  // Declare state variables for the PDF modal and the PDF file to be displayed in the modal
   const [isModalOpen, setIsModalOpen] = React.useState(false);
   const [pdfFile, setPdfFile] = React.useState('');
 
-
+   // These functions handle clicks on the menu images. They set the state variables for the PDF modal and the PDF file to be
+  // displayed in the modal.
   const handleClickBrunch = () => {
     setIsModalOpen(true)
     setPdfFile(pdf);
@@ -55,7 +59,8 @@ const Menu = () => {
     setPdfFile(pdf4);
   }
  
- 
+  // The component is rendered, with the parallax image at the top and four menu images below it. Each menu image is
+  // clickable and will open the PDF modal when clicked.
   return (
     <div name='menu'>
       <Parallax bgImage={imageDemo} keepImg strength={250}>

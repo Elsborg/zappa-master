@@ -2,8 +2,10 @@ import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import '../style/bookingform.css';
 
-
+// This component represents a form for booking a table at a restaurant. It imports the necessary dependencies, including
+// the 'emailjs' library for sending emails and the 'bookingform.css' file for styling.
 const BookingForm = () => {
+    // Declare a reference to the form element and state variables for each form input field
   const form = useRef();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -12,21 +14,8 @@ const BookingForm = () => {
   const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
   const [time, setTime] = useState(new Date().toISOString().slice(11, 16));
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const bookingDetails = `
-      Name: ${name}
-      Email: ${email}
-      Phone: ${phone}
-      Guests: ${guests}
-      Date: ${date}
-      Time: ${time}
-    `;
-
-    alert(bookingDetails);
-  }
-
+   // This function is called when the form is submitted. It uses the 'emailjs' library to send the form data as an email.
+  // After the email is sent, it resets the state variables for the form input fields.
     const sendEmail = (e) => {
         e.preventDefault();
     
@@ -45,7 +34,8 @@ const BookingForm = () => {
 
       };
   
-
+  // The form element is rendered, with each form input field controlled by a corresponding state variable. The 'onSubmit'
+  // event is handled by the 'sendEmail' function.
   return (
     <form ref={form} onSubmit={sendEmail}>
         <legend style={{fontSize: '16px', fontWeight: '300', textTransform: 'uppercase'}}>Bord bestilling</legend>

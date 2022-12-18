@@ -4,6 +4,9 @@ import bygning from "../assets/zappabygning.jpg";
 import SimpleSlider from '../components/SimpleSlider';
 import "../style/news.css";
 
+// This component represents a section of the website that displays news and updates about the cafe. It uses the 'react-parallax'
+// library for the parallax effect, and the 'react-slick' library for the carousel. It also imports an image file and a CSS file for styling.
+
 
 const insideStyles = {
   color: "white",
@@ -18,6 +21,7 @@ const insideStyles = {
 };
 
 const News = () => {
+    // The component is rendered with a parallax effect on the background image, a header and text describing the the content
   return (
     <div className='nyheder'>
       <Parallax bgImage={bygning} keepImg strength={250}>
