@@ -33,7 +33,7 @@ const PostPage = () => {
             <section className="post-row">
                 <article>
                     <h3 className="post-header">{post.title && parse(post.title.rendered)}</h3>
-                   <p className="post-text"> <div>{post.content && parse(post.content.rendered)}</div></p>
+                   <div className="post-text">{post.content && parse(post.content.rendered)}</div>
                 </article>
                 <figure>
                     <img src={image} alt={post.title?.rendered} />
