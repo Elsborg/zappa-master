@@ -108,8 +108,8 @@
 }
 
 .post-row figure {
-  height: 450px;
   width: 100%;
+  margin-top: 60px;
 }
 
 @media (min-width: 768px) {
@@ -134,5 +134,6 @@
     overflow: hidden;
     grid-row: 2;
     height: 450px;
+    margin-top: 0;
   }
 }
