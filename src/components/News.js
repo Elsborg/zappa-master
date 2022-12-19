@@ -39,6 +39,8 @@ const News = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: false,
+          swipe: false,
+          draggable: false,
           responsive: [
             {
             breakpoint: 600,
