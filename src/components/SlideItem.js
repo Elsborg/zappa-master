@@ -1,5 +1,5 @@
 import parse from "html-react-parser";
-
+import { useNavigate } from "react-router-dom";
 /*
 The SlideItem component is a single slide in a carousel, displaying an image and some text. It accepts a post object as a prop and uses data from this object to display the image and the title and content of the slide.
 
@@ -9,6 +9,8 @@ The component then returns an article element containing the image and the title
 */
 
 export default function SlideItem({ post }) {
+    const navigate = useNavigate();
+    
     let image = "https://cederdorff.github.io/img/logo512.webp";
 
     if (post._embedded && post._embedded["wp:featuredmedia"]) {
@@ -17,10 +19,9 @@ export default function SlideItem({ post }) {
 
     return (
         <section className="grid-container">
-        <article>
+        <article onClick={() => navigate(post.slug)}>
             <img src={image} alt={post.title.rendered} />
             <h2>{parse(post.title.rendered)}</h2>
-            {parse(post.content.rendered)}
         </article>
         </section>
     );
