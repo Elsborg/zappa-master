@@ -8,7 +8,8 @@ import About from './About'
 import News from './News'
 import Gallery from './Gallery'
 
-//The component wraps all the pages for the Café concept website and is imported and displayed in the app.js with the landingpage component.
+//The component wraps all the pages for the Café concept website
+//and is imported and displayed in the app.js with the landingpage component.
 
 const Wrapper = () => {
   return (
