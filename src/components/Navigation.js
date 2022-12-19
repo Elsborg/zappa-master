@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import {FiFacebook, FiInstagram} from 'react-icons/fi'
 import { Link as LinkScroll } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import zappa from '../assets/zappalogo.png'
 import '../style/navigation.css'
 
@@ -65,7 +66,7 @@ const Navigation = () => {
 
         
         <div className='logo'>
-            <img className='logo-nav' src={zappa} alt="zappa logo" />
+            <Link to="/"><img className='logo-nav' src={zappa} alt="zappa logo" /></Link>
         </div>
         <div className='nav-flex'>
         <ul className='ul-flex'>
