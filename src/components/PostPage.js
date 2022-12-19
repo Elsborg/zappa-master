@@ -29,7 +29,7 @@ const PostPage = () => {
 
     return (
         <section className="post-container">
-            <BsArrowLeft onClick={() => navigate(-1)} size={30} style={{color: 'white', cursor: 'pointer', position: 'absolute', top: '0', left: '0'}} />
+            <BsArrowLeft onClick={() => navigate(-1)} size={35} style={{color: 'white', cursor: 'pointer', position: 'absolute', top: '15', left: '20'}} />
             <section className="post-row">
                 <article>
                     <h3 className="post-header">{post.title && parse(post.title.rendered)}</h3>
