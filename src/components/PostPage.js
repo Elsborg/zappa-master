@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { BsArrowLeft } from 'react-icons/bs'
 import parse from "html-react-parser";
 import "../style/news.css";
 
 const PostPage = () => {
+    const navigate = useNavigate();
     const [post, setPost] = useState({});
     const params = useParams();
     console.log(params);
@@ -27,6 +29,7 @@ const PostPage = () => {
 
     return (
         <section className="post-container">
+            <BsArrowLeft onClick={() => navigate(-1)} size={30} style={{color: 'white', cursor: 'pointer', position: 'absolute', top: '0', left: '0'}} />
             <section className="post-row">
                 <article>
                     <h3 className="post-header">{post.title && parse(post.title.rendered)}</h3>
