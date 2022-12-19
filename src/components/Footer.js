@@ -6,7 +6,7 @@ import '../style/footer.css'
 
 const Footer = () => {
     return (
-        <div className="footer-flex">
+        <div name="åbningstider" className="footer-flex">
             <div className="findos">
                 <h2 className='footer-header'>find os</h2>
                 <div className='footer-content'>

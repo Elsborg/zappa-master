@@ -41,6 +41,10 @@ const Navigation = () => {
             id: 6,
             link: 'galleri'
         },
+        {
+            id: 7,
+            link: 'åbningstider'
+        }
     ]
     
 
